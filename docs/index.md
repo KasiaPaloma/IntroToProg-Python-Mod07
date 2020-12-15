@@ -15,7 +15,7 @@ age = float(input("How old are you? - "))
 
 If the user does not enter a number, as our code expects, they will receive the below error (Figure 01). We understand it because we understand Python syntax, but this does not mean that your user will understand what they did incorrectly.
 
-![Figure 01](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage01.png "Figure 01")
+![Figure 01](docs/DocImage01.png "Figure 01")
 ###### Figure 01. The results of Listing 01
  
 The try and except blocks, examples of structured error handling, were created to offer more consistency within programs and different developers. This [YouTube Video](https://www.youtube.com/watch?v=nlCKrKGHSSk) gives a quick overview of the four clauses in Python Exception handling. Below we will use the same code as above, but use try and except to help the user receive an error message that will guide them in the right direction. In this example we are replacing the specific exception ValueError message with “Age should be a number.”
