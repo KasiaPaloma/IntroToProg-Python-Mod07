@@ -15,7 +15,7 @@ age = float(input("How old are you? - "))
 
 If the user does not enter a number, as our code expects, they will receive the below error (Figure 01). We understand it because we understand Python syntax, but this does not mean that your user will understand what they did incorrectly.
 
-![Figure 01](docs/DocImage01.png "Figure 01")
+![Figure 01](https://kasiapaloma.github.io/IntroToProg-Python-Mod07/DocImage01.png "Figure 01")
 ###### Figure 01. The results of Listing 01
  
 The try and except blocks, examples of structured error handling, were created to offer more consistency within programs and different developers. This [YouTube Video](https://www.youtube.com/watch?v=nlCKrKGHSSk) gives a quick overview of the four clauses in Python Exception handling. Below we will use the same code as above, but use try and except to help the user receive an error message that will guide them in the right direction. In this example we are replacing the specific exception ValueError message with “Age should be a number.”
@@ -29,7 +29,7 @@ while True:
 ###### Listing 02
 The code will first execute the try clause, and if no exception occurs then it will skip the except clause. See below how much cleaner the error is now?
 
-![Figure02](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage02.png "Figure 02")
+![Figure02](https://kasiapaloma.github.io/IntroToProg-Python-Mod07/DocImage02.png "Figure 02")
 ###### Figure 02. The results of Listing 02
 
 [Docs.Python](https://docs.python.org/3/library/exceptions.html) gives a great overview of all the exceptions that are built into Python. When an exception occurs, it may have an argument, which is an associated value. You can display this argument by specifying a variable after the exception. 
@@ -43,7 +43,7 @@ except Exception as e:
 ###### Listing 03
 Now the user will see exactly what created the error message. In the example below we have a simple version and we see that the issue is the “K” that was entered, but this error handling can become more useful with more advanced code. 
 
-![Figure03](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage03.png "Figure 03")
+![Figure03](https://kasiapaloma.github.io/IntroToProg-Python-Mod07/DocImage03.png "Figure 03")
 ###### Figure 03. The results of Listing 03
  
 You can also group multiple exception types by listing them in a single except clause, by creating a comma-separated group enclosed in a set of parentheses:
@@ -103,7 +103,7 @@ file.close()
 ###### Listing 06
 For this demo I have used file_name = “NameAndAge.dat.” Now that our data was written to this document you will see it displayed in the following way:
 
-![Figure04](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage04.png "Figure 04")
+![Figure04](https://kasiapaloma.github.io/IntroToProg-Python-Mod07/DocImage04.png "Figure 04")
 ###### Figure 04. The results of Listing 06
 
 To read the data we use the **pickle.load** method. 
@@ -116,7 +116,7 @@ print(list_of_rows)
 ###### Listing 07
 In order to see this data I have included both print statements. Below is how it displays to the user.
 
-![Figure05](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage05.png "Figure 05")
+![Figure05](https://kasiapaloma.github.io/IntroToProg-Python-Mod07/DocImage05.png "Figure 05")
 ###### Figure 05. The results of Listing 07
 
 ## Summary
