@@ -18,7 +18,7 @@ If the user does not enter a number, as our code expects, they will receive the 
 ![Figure 01](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage01.png "Figure 01")
 ###### Figure 01. The results of Listing 01
  
-The try and except blocks, examples of structured error handling, were created to offer more consistency within programs and different developers. https://www.youtube.com/watch?v=nlCKrKGHSSk gives a quick overview of the four clauses in Python Exception handling. Below we will use the same code as above, but use try and except to help the user receive an error message that will guide them in the right direction. In this example we are replacing the specific exception ValueError message with “Age should be a number.”
+The try and except blocks, examples of structured error handling, were created to offer more consistency within programs and different developers. This [YouTube Video](https://www.youtube.com/watch?v=nlCKrKGHSSk) gives a quick overview of the four clauses in Python Exception handling. Below we will use the same code as above, but use try and except to help the user receive an error message that will guide them in the right direction. In this example we are replacing the specific exception ValueError message with “Age should be a number.”
 ```
 while True:
     try:
@@ -32,7 +32,7 @@ The code will first execute the try clause, and if no exception occurs then it w
 ![Figure02](https://github.com/KasiaPaloma/IntroToProg-Python-Mod07/blob/main/docs/DocImage02.png "Figure 02")
 ###### Figure 02. The results of Listing 02
 
-https://docs.python.org/3/library/exceptions.html gives a great overview of all the exceptions that are built into Python. When an exception occurs, it may have an argument, which is an associated value. You can display this argument by specifying a variable after the exception. 
+[Docs.Python](https://docs.python.org/3/library/exceptions.html) gives a great overview of all the exceptions that are built into Python. When an exception occurs, it may have an argument, which is an associated value. You can display this argument by specifying a variable after the exception. 
 ```
 try:
     age = float(input("How old are you? - "))
@@ -55,7 +55,7 @@ while True:
         print("Age should be a number.\n")
 ```
 ### Creating Your Own Exceptions
-In the below code we have examples of how we can create our own exceptions and exception classes. This allows for more flexibility if we know we have parameters we need to meet, like when asking a user to create a password. For this demo I have created the rules “name should be longer than one character,” and “name should only be alphabetic characters.” A more detailed explanation can be found at https://www.programiz.com/python-programming/user-defined-exception. 
+In the below code we have examples of how we can create our own exceptions and exception classes. This allows for more flexibility if we know we have parameters we need to meet, like when asking a user to create a password. For this demo I have created the rules “name should be longer than one character,” and “name should only be alphabetic characters.” A more detailed explanation can be found at [Programiz](https://www.programiz.com/python-programming/user-defined-exception). 
 ```
 class Error(Exception):
     """ Base class for other exceptions"""
@@ -94,7 +94,7 @@ Up until now we have written to and read from text files. These are convenient b
 import pickle
 ```
 ###### Listing 05
-Like text files, binary files follow a similar syntax to write to and read from, generally you just add a “b” to the file access mode (see next two screenshots of code). To store the data we use the **pickle.dump method**. https://pythontic.com/modules/pickle/dumps provides a great explanation of the method signature and overview.
+Like text files, binary files follow a similar syntax to write to and read from, generally you just add a “b” to the file access mode (see next two screenshots of code). To store the data we use the **pickle.dump method**. [Pythontic](https://pythontic.com/modules/pickle/dumps) provides a great explanation of the method's signature and overview.
 ```
 file = open(file_name, "wb")
 pickle.dump(list_of_rows, file)
